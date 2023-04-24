@@ -3,29 +3,28 @@ body {
   color: #333;
   font-family: Lato, sans-serif;
 }
+
 .header {
   width: 500px;
   margin: 0 auto;
   display: block;
   text-align: right;
 }
+
 .header__img  {
   width: 100%;
 }
+
 .header__more-info {
   font-family: fantasy, cursive;
 }
 
-@media (max-width:768px) {
-.header { 
-  text-align: center;
-}
-}
 .planning {
   display: block;
   width: 500px;
   margin: 0 auto 0;
 }
+
 .add__input,
 .to-do__task,
 .to-do__input,
@@ -35,20 +34,24 @@ body {
   display: inline-block;
   flex-grow: 1;
 }
+
 .add__task {
   display: flex;
 }
+
 .to-do__lists,
 .completed__lists {
   margin: 0;
   padding: 0px;
 }
+
 .to-do__list,
 .completed__list,
 .to-do__title,
 .completed__title {
   list-style: none;
 }
+
 .add__input,
 .to-do__checkbox,
 .to-do__input,
@@ -61,6 +64,7 @@ body {
 .completed__btn-delete {
   outline: none;
 }
+
 .add__btn,
 .to-do__btn-edit,
 .to-do__btn-delete,
@@ -74,6 +78,7 @@ body {
   font-family: Lato, sans-serif;
   cursor: pointer;
 }
+
 .add__btn:hover,
 .to-do__btn-edit:hover,
 .to-do__btn-delete:hover,
@@ -81,6 +86,7 @@ body {
 .completed__btn-delete:hover {
   color: #3a3a3a;
 }
+
 /* Heading */
 .to-do__title,
 .completed__title,
@@ -93,6 +99,7 @@ body {
   margin: 0;
   text-transform: uppercase;
 }
+
 .add__input,
 .to-do__input,
 .completed__input {
@@ -107,6 +114,7 @@ body {
   font-family: Lato, sans-serif;
   color: #888;
 }
+
 .add__input:focus,
 .to-do__input:focus,
 .completed__input:focus {
@@ -118,6 +126,7 @@ body {
   display: block;
   margin: 0 0 20px;
 }
+
 .add__input {
   width: 368px;
 }
@@ -127,7 +136,6 @@ body {
 .completed__input {
   display: none;
 }
-
 
 .editMode input[type="text"] {
   display: inline-block;
@@ -148,18 +156,20 @@ body {
   justify-content: space-between;
   align-items: center;
 }
+
 .to-do__list > * {
   vertical-align: middle;
 }
+
 .completed__list > * {
   vertical-align: middle;
 }
-
 
 .to-do__checkbox,
 .completed__checkbox {
   margin: 0 10px;
 }
+
 .to-do__task,
 .completed__task {
   padding-left: 10px;
@@ -167,16 +177,19 @@ body {
   font-size: 18px;
   width: 226px;
 }
+
 .to-do__input,
 .completed__input {
   width: 226px;
 }
+
 .to-do__btn-delete__img,
 .completed__btn-delete__img {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
+
 .to-do__btn-delete__img:hover,
 .completed__btn-delete__img:hover {
   transform: rotateZ(0);
@@ -197,6 +210,7 @@ button {
   font-family: Lato, sans-serif;
   cursor: pointer;
 }
+
 button:hover {
   color: #3a3a3a;
 }
@@ -225,6 +239,7 @@ li {
 li > input[type="checkbox"] {
   margin: 0 10px;
 }
+
 li > label {
   padding-left: 10px;
   box-sizing: border-box;
@@ -237,6 +252,7 @@ button.delete img {
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
+
 button.delete img:hover {
   transform: rotateZ(0);
 }
@@ -250,3 +266,11 @@ ul li input[type="text"] {
   text-decoration: line-through;
   color: #888;
 }
+
+@media (max-width:768px) {
+
+  .header { 
+    text-align: center;
+  }
+  
+  }
